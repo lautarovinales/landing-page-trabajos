@@ -82,7 +82,7 @@ section{
     justify-content: center;
     align-items: center;
     text-align: start;
-    background-color: #e3cb54;
+    background-color: #F57C00;
     height: fit-content;
 }
 
@@ -99,11 +99,11 @@ section img{
 
 .title-text h1{
     font-size: 2rem;
-    color: #fff2af;
+    color: #ffa64d;
 }
 
 .news{
-    border: 1px solid #efc259;
+    border: 1px solid #ffa64d;
     border-radius: 50px;
     padding: 10px 30px;
     font-size: 1rem !important;
@@ -111,7 +111,7 @@ section img{
 }
 
 .title-text p{
-    color: #fff2af;
+    color: #ffa64d;
     font-size: 1.5rem;
 }
 
