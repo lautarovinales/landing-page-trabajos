@@ -19,22 +19,31 @@ const App = () => {
           <div className='title-text'>
             <p className='news'>NOVEDADES</p>
             <h1>¡Nuevo ChocoCream!</h1>
-            <p>Descubre el placer inigualable del ChocoCream. Este exquisito cono dulce combina el suave y cremoso sabor de la crema americana con un corazón de chocolate fundente, creando una experiencia indulgente desde el primer bocado. </p>
+            <p>Descubre el placer inigualable del ChocoCream. Este exquisito cono dulce combina el suave y cremoso sabor de la crema americana con un corazón de chocolate fundente.</p>
           </div>
         </section>
         <section className='about'>
           <div className="about-card">
             <h1 className='about-card-title'>¿Dónde encontrarnos?</h1>
-            <p className="about-card-text">San Nicolás de los Arroyos, Calle 123</p>
-            <p className="about-card-text">10:00 - 13:00 y 16:30 - 24:00</p>
+            <p className="about-card-text">San Nicolás de los Arroyos, Calle 123 <br />10:00 - 13:00 y 16:30 - 24:00</p>
             <button className='about-card-button'>Muestrame en maps</button>
           </div>
           <div className="about-card">
             <h1 className='about-card-title'>Nuestras redes sociales</h1>
-            <button className='about-card-button'>Whatsapp</button>
-            <button className='about-card-button'>Instagram</button>
-            <button className='about-card-button'>Facebook</button>
+            <div className="socials">
+            <button className='about-card-button-s'><i class="fab fa-whatsapp"></i></button>
+            <button className='about-card-button-s'><i class="fab fa-facebook"></i></button>
+            <button className='about-card-button-s'><i class="fab fa-instagram"></i></button>
+            </div>
           </div>
+        </section>
+        <section >
+        <div className='title-text'>
+            <p className='news'>NOVEDADES</p>
+            <h1>¡Nuevo OreoCream!</h1>
+            <p>Descubre el placer inigualable del OreoCream. Este exquisito cono dulce combina el suave y cremoso sabor de la crema de pistachos con las crocantes galletitas Oreo.</p>
+          </div>
+          <img src="./images/ice-cream-oreo.png" alt="" />
         </section>
       </main>
       <Footer />
