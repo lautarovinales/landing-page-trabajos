@@ -4,33 +4,101 @@
     font-family: 'Montserrat';
 }
 
-
-
 nav {
     width: 100%;
-    padding: 40px;
+    padding: 40px 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
+    background-color: transparent; /* Añadido */
+    transition: background-color 0.3s ease; /* Añadido */
+    z-index: 1000; /* Añadido */
 }
 
-nav ul {
+.nav-links {
     display: flex;
     gap: 20px;
     list-style: none;
 }
 
-ul a {
+.nav-links a {
     color: #e3e3e3;
     text-decoration: none;
 }
 
-li {
+.nav-links li {
     padding: 10px 30px;
+    list-style: none;
 }
 
-main{
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #e3e3e3;
+}
+
+.nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Añadido */
+}
+
+.nav-overlay.active {
+    display: flex;
+}
+
+.nav-overlay ul {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-overlay ul li {
+    margin: 20px 0;
+}
+
+.nav-overlay ul li a {
+    color: #e3e3e3;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-overlay .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: #e3e3e3;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+/* Resto del CSS */
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,16 +120,16 @@ header {
     gap: 20px;
 }
 
-header img{
+header img {
     height: 200px;
 }
 
-.title-header{
+.title-header {
     color: white;
     font-weight: 500;
 }
 
-.button-header{
+.button-header {
     padding: 15px 40px;
     background-color: #ff9b29;
     color: #222222;
@@ -71,14 +139,14 @@ header img{
     border: none;
 }
 
-.button-header:hover{
+.button-header:hover {
     cursor: pointer;
     transform: scale(1.05);
     transition: 0.3s;
     background-color: #ffaf53;
 }
 
-section{
+section {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -90,23 +158,22 @@ section{
     height: fit-content;
 }
 
-section img{
+section img {
     width: 45%;
 }
 
-
-.title-text{
+.title-text {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.title-text h1{
+.title-text h1 {
     font-size: 2rem;
     color: #ff9b29;
 }
 
-.news{
+.news {
     border: 1px solid #ff9b29;
     border-radius: 50px;
     padding: 10px 30px;
@@ -115,45 +182,45 @@ section img{
     color: #ff9b29 !important;
 }
 
-.title-text p{
+.title-text p {
     color: #333333;
     font-size: 1.5rem;
 }
 
-.about{
+.about {
     width: 100%;
     height: fit-content;
     background-color: #202020;
     display: flex;
     flex-direction: row;
     gap: 20px;
-    padding: 50px 200px;
+    padding: 150px 200px;
     align-items: start;
     justify-content: center;
 }
 
-.about-card{
+.about-card {
     border-radius: 5px;
     width: 50%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.about-card-title{
+.about-card-title {
     margin-bottom: 20px;
     color: #ff9b29;
 }
 
-.about-card-text{
+.about-card-text {
     color: #505050;
     margin-bottom: 15px;
 }
 
-.about-card-button{
+.about-card-button {
     padding: 10px 30px;
     border: none;
     background-color: #ff9b29;
@@ -163,12 +230,12 @@ section img{
     font-weight: 600;
 }
 
-.socials{
+.socials {
     display: flex;
     gap: 20px;
 }
 
-.about-card-button-s{
+.about-card-button-s {
     padding: 10px 10px;
     border: none;
     color: #ff9b29;
@@ -182,7 +249,7 @@ section img{
     background-color: #202020;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,11 +258,11 @@ footer{
     color: #373737;
 }
 
-footer ul{
+footer ul {
     list-style: none
 }
 
-.left-right{
+.left-right {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -204,24 +271,24 @@ footer ul{
     padding: 100px 0px;
 }
 
-.left{
+.left {
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
 }
 
-.left img{
+.left img {
     height: 80px;
 }
 
-.right ul{
+.right ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.copy{
+.copy {
     width: 100%;
     padding: 10px;
     background-color: #121212;
@@ -231,42 +298,42 @@ footer ul{
 }
 
 @media (max-width:1024px) {
-    section{
+    section {
         padding: 50px 100px;
     }
 
-    .about{
+    .about {
         padding: 50px 100px;
     }
 }
 
 @media (max-width:768px) {
-    section{
+    section {
         padding: 40px 20px;
     }
 
-    .title-text h1{
+    .title-text h1 {
         font-size: 1.5rem;
     }
     
-    .title-text p{
+    .title-text p {
         font-size: 1rem;
     }
 
-    .news{
+    .news {
         font-size: 0.5rem !important;
     }
 
-    .about{
+    .about {
         flex-direction: column;
         padding: 50px 20px;
     }
 
-    .about-card{
+    .about-card {
         width: 100%;
     }
 
-    .left-right{
+    .left-right {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -274,57 +341,47 @@ footer ul{
 }
 
 @media (max-width:480px) {
-    header img{
+    header img {
         height: 100px;
     }
 
-    nav ul{
-        justify-content: space-between;
-        align-items: center;
+    .news {
+        display: none;
     }
 
-    nav li{
-        background-color: #121212;
-        padding: 30px 20px;
-    }
-
-    .news{
-       display: none;
-    }
-
-    section{
+    section {
         padding: 30px 40px;
     }
 
-    .title-text h1{
+    .title-text h1 {
         font-size: 1rem;
     }
     
-    .title-text p{
-        font-size: 0.9rem;
+    .title-text p {
+        font-size: 0.6rem;
     }
 
-    .news{
+    .news {
         font-size: 0.5rem !important;
     }
 
-    .copy{
+    .copy {
         font-size: 0.7rem;
     }
 
-    .left-right{
+    .left-right {
         padding: 40px 10px;
     }
 
-    .about-card-title{
+    .about-card-title {
         font-size: 0.9rem;
     }
 
-    .about-card-text{
+    .about-card-text {
         font-size: 0.7rem;
     }
 
-    footer img{
+    footer img {
         height: 40px !important;
     }
 }
