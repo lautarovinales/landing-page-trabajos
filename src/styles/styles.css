@@ -341,6 +341,11 @@ footer ul {
 }
 
 @media (max-width:480px) {
+
+    header H1{
+        font-size: 1.2rem;
+    }
+
     header img {
         height: 100px;
     }
@@ -383,5 +388,13 @@ footer ul {
 
     footer img {
         height: 40px !important;
+    }
+
+    .about H1{
+        font-size: 1rem;
+    }
+
+    .about p{
+        font-size: 0.6rem;
     }
 }

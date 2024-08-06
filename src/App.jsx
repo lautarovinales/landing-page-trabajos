@@ -25,7 +25,7 @@ const App = () => {
             <p>Descubre el placer inigualable del ChocoCream. Este exquisito cono dulce combina el suave y cremoso sabor de la crema americana con un corazón de chocolate fundente.</p>
           </div>
         </section>
-        <section id="about" ref={aboutRef}>
+        <section className="about" id="about" ref={aboutRef}>
           <div className="about-card">
             <h1 className='about-card-title'>¿Dónde encontrarnos?</h1>
             <p className="about-card-text">San Nicolás de los Arroyos, Calle 123 <br />10:00 - 13:00 y 16:30 - 24:00</p>
