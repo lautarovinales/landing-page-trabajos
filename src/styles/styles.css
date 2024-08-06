@@ -23,7 +23,7 @@ nav {
 }
 
 .nav-links a {
-    color: #e3e3e3;
+    color: #212121;
     text-decoration: none;
 }
 
@@ -124,6 +124,16 @@ header img {
     height: 200px;
 }
 
+.history h1{
+    margin-bottom: 20px;
+    color: #D81159;
+    font-size: 2rem;
+}
+
+.history p{
+    color: #212121;
+}
+
 .title-header {
     color: white;
     font-weight: 500;
@@ -131,7 +141,7 @@ header img {
 
 .button-header {
     padding: 15px 40px;
-    background-color: #ff9b29;
+    background-color: #de3c77;;
     color: #222222;
     border-radius: 50px;
     font-weight: 600;
@@ -143,7 +153,7 @@ header img {
     cursor: pointer;
     transform: scale(1.05);
     transition: 0.3s;
-    background-color: #ffaf53;
+    background-color: #eb4683;;
 }
 
 section {
@@ -154,7 +164,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: start;
-    background-color: #1b1b1b;
+    background-color: #eeeeee;
     height: fit-content;
 }
 
@@ -190,7 +200,7 @@ section img {
 .about {
     width: 100%;
     height: fit-content;
-    background-color: #202020;
+    background-color: #dfdfdf;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -298,6 +308,10 @@ footer ul {
 }
 
 @media (max-width:1024px) {
+    .history img{
+        display: none;
+    }
+
     section {
         padding: 50px 100px;
     }
@@ -308,6 +322,11 @@ footer ul {
 }
 
 @media (max-width:768px) {
+
+    .history img{
+        display: none;
+    }
+
     section {
         padding: 40px 20px;
     }
@@ -341,6 +360,10 @@ footer ul {
 }
 
 @media (max-width:480px) {
+
+    .history p{
+        font-size: 0.7rem;
+    }
 
     header H1{
         font-size: 1.2rem;

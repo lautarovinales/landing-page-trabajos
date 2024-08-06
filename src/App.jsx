@@ -17,6 +17,23 @@ const App = () => {
           <h1 className='title-header'>El mejor helado al mejor precio :)</h1>
           <button className='button-header'>Pedir ahora</button>
         </header>
+        <section className='history'>
+          <img src="./images/falling-icecream.png" alt="" srcset="" />
+          <div className="h1-p">
+          <h1>
+            La historia de la bocha de helado
+          </h1>
+          <p>
+          Había una vez un heladero llamado Laucha, conocido en su pueblo por su amabilidad y buen humor. Laucha siempre había soñado con crear los helados más deliciosos, pero estaba cansado de los sabores industriales que compraba para vender.
+
+Un día, decidió cambiar las cosas y comenzó a hacer helado casero en su pequeña cocina. Utilizó ingredientes frescos y naturales, experimentando con distintas combinaciones hasta encontrar las más deliciosas. Su dedicación y pasión por el helado se reflejaban en cada nueva creación.
+
+Laucha decidió llevar sus helados caseros a la plaza del pueblo. Al principio, los vecinos eran escépticos, pero su curiosidad los llevó a probar los nuevos sabores. En poco tiempo, los helados de Laucha se convirtieron en un éxito. Los niños y adultos formaban largas filas para disfrutar de esos helados que sabían a hogar y cariño.
+
+Gracias a su ingenio y dedicación, Laucha transformó su carrito de helados en un lugar de encuentro y alegría. Su negocio creció, y él continuó creando nuevos sabores, repartiendo felicidad con cada cono. Así, Laucha demostró que con pasión y esfuerzo, los sueños pueden hacerse realidad, llevando sonrisas a todos en su querido pueblo.
+          </p>
+          </div>
+        </section>
         <section>
           <img src="./images/ice-cream.png" alt="" />
           <div className='title-text'>
