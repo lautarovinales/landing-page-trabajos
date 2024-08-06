@@ -52,6 +52,10 @@ header {
     gap: 20px;
 }
 
+header img{
+    height: 200px;
+}
+
 .title-header{
     color: white;
     font-weight: 500;
@@ -167,15 +171,15 @@ section img{
 .about-card-button-s{
     padding: 10px 10px;
     border: none;
-    background-color: #ffaf53;
-    color: #222222;
+    color: #ff9b29;
     border-radius: 100px;
-    width: 60px;
-    height: 60px;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #202020;
 }
 
 footer{
@@ -270,10 +274,18 @@ footer ul{
 }
 
 @media (max-width:480px) {
-    nav{
-        font-size: 0.7rem;
-        padding: 40px 0px;
+    header img{
+        height: 100px;
+    }
+
+    nav ul{
         justify-content: space-between;
+        align-items: center;
+    }
+
+    nav li{
+        background-color: #121212;
+        padding: 30px 20px;
     }
 
     .news{
@@ -302,5 +314,17 @@ footer ul{
 
     .left-right{
         padding: 40px 10px;
+    }
+
+    .about-card-title{
+        font-size: 0.9rem;
+    }
+
+    .about-card-text{
+        font-size: 0.7rem;
+    }
+
+    footer img{
+        height: 40px !important;
     }
 }
