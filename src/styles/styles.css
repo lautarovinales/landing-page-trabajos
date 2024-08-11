@@ -25,6 +25,7 @@ nav {
 .nav-links a {
     color: #212121;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .nav-links li {
@@ -126,7 +127,6 @@ header img {
 
 .history h1{
     margin-bottom: 20px;
-    color: #D81159;
     font-size: 2rem;
 }
 
@@ -141,7 +141,7 @@ header img {
 
 .button-header {
     padding: 15px 40px;
-    background-color: #de3c77;;
+    background-color: #ffcf97;
     color: #222222;
     border-radius: 50px;
     font-weight: 600;
@@ -153,7 +153,7 @@ header img {
     cursor: pointer;
     transform: scale(1.05);
     transition: 0.3s;
-    background-color: #eb4683;;
+    background-color: #ffe0bc;
 }
 
 section {
@@ -180,16 +180,15 @@ section img {
 
 .title-text h1 {
     font-size: 2rem;
-    color: #ff9b29;
 }
 
 .news {
-    border: 1px solid #ff9b29;
+    border: 1px solid #ffcf97;
     border-radius: 50px;
     padding: 10px 30px;
     font-size: 1rem !important;
     width: min-content;
-    color: #ff9b29 !important;
+    color: #ffcf97 !important;
 }
 
 .title-text p {
@@ -222,7 +221,7 @@ section img {
 
 .about-card-title {
     margin-bottom: 20px;
-    color: #ff9b29;
+    color: #000000;
 }
 
 .about-card-text {
@@ -233,7 +232,7 @@ section img {
 .about-card-button {
     padding: 10px 30px;
     border: none;
-    background-color: #ff9b29;
+    background-color: #ffcf97;
     color: #202020;
     border-radius: 50px;
     max-width: fit-content;
@@ -248,7 +247,7 @@ section img {
 .about-card-button-s {
     padding: 10px 10px;
     border: none;
-    color: #ff9b29;
+    color: #ffcf97;
     border-radius: 100px;
     font-size: 1.5rem;
     display: flex;
